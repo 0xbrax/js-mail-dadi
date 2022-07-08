@@ -112,7 +112,7 @@ body {
     animation-play-state: paused;
 }
 .anim-start {
-    animation: spin 15s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    animation: spin 5s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
     animation-play-state: running;
 }
 
