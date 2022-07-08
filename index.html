@@ -5,18 +5,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <div>
-            <input id="mail-in" type="text" placeholder="email">
+        <div class="login">
+            <input id="mail-in" type="text" placeholder="Inserisci email">
             <button id="submit">Login</button>
         </div>
 
-        <hr />
+        <div class="game-button">
+            <div id="play-game">
+            </div>
+        </div>
 
-        <div>
-            <button id="play-game">Gioca!</button>
+        <div class="game-label">
+            <div>Player</div>
+            <div>Computer</div>
+        </div>
+
+        <div class="cube-container">
+            <div class="container">
+                <div id="dice-1" class="cube">
+                    <div class="face front face-P1"><img src="img/dice1.png"></div>
+                    <div class="face right face-P1"><img src="img/dice2.png"></div>
+                    <div class="face top face-P1"><img src="img/dice3.png"></div>
+                    <div class="face bottom face-P1"><img src="img/dice4.png"></div>
+                    <div class="face left face-P1"><img src="img/dice5.png"></div>
+                    <div class="face back face-P1"><img src="img/dice6.png"></div>
+                </div>
+            </div>
+    
+            <div class="container">
+                <div id="dice-2" class="cube">
+                    <div class="face front face-P2"><img src="img/dice1.png"></div>
+                    <div class="face right face-P2"><img src="img/dice2.png"></div>
+                    <div class="face top face-P2"><img src="img/dice3.png"></div>
+                    <div class="face bottom face-P2"><img src="img/dice4.png"></div>
+                    <div class="face left face-P2"><img src="img/dice5.png"></div>
+                    <div class="face back face-P2"><img src="img/dice6.png"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="game-result">
+            <div id="result">
+            </div>
         </div>
 
         <script type="text/javascript" src="js/main.js"></script>
