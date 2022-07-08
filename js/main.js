@@ -23,7 +23,7 @@ submit.addEventListener('click', function() {
 
 
 const play = document.getElementById('play-game');
-const number = ['1', '2', '3', '4', '5', '6'];
+const number = [1, 2, 3, 4, 5, 6];
 let player1;
 let player2;
 let cubeP1 = document.getElementById('dice-1');
@@ -38,9 +38,9 @@ play.addEventListener('click', function() {
     result.style.display = 'none';
 
     for (let x = 0; x < number.length; x++) {
+        player1 = Math.floor((Math.random() * number.length) + 1);
+        player2 = Math.floor((Math.random() * number.length) + 1);
     }
-    player1 = Math.floor((Math.random() * number.length) + 1);
-    player2 = Math.floor((Math.random() * number.length) + 1);
 
     if (player1 == 1) {
         faceP1[0].style.transform = 'rotateX(0deg) translateZ(100px)';
